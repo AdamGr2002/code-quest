@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { ChevronRight, Code, Shield, Sword, Trophy, Zap, Star, BookOpen, Users, Menu, X, LogOut, UserCircle } from "lucide-react";
 import { SignInButton, SignOutButton, SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
-
+import codequestLogo from "./assets/codequest.png";
 export default function CodeWarriors() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -14,8 +14,8 @@ export default function CodeWarriors() {
     <div className="flex min-h-screen flex-col bg-gradient-to-b from-gray-900 to-gray-950 text-gray-100">
       <header className="container z-40 flex h-20 items-center justify-between py-6">
         <div className="flex items-center gap-2">
-          <Shield className="h-8 w-8 text-purple-500" />
-          <span className="text-xl font-bold">CodeWarriors</span>
+        <img src={codequestLogo} alt="CodeWarriors Logo" className="h-16 w-16" />
+          <span className="text-xl font-bold">CodeQuest</span>
         </div>
         {/* Desktop Navigation */}
         <nav className="hidden gap-6 md:flex">
